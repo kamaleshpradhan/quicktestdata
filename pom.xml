@@ -5,12 +5,12 @@
   <version>1.0</version>
 	
   <build>
-     <sourceDirectory>/java/src/testbox</sourceDirectory>
+     <sourceDirectory>quicktestdata/java/src/testbox</sourceDirectory>
      <!--testSourceDirectory>/home/git/proj/apptestsrc</testSourceDirectory-->
-     <outputDirectory>/java/bin/testbox</outputDirectory>
+     <outputDirectory>quicktestdata/java/bin/testbox</outputDirectory>
      <!--testOutputDirectory>/home/git/proj/apptestclass</testOutputDirectory-->
-    <directory>app</directory>
-    <finalName>${artifactID}-${version}</finalName>
+    <directory>quicktestdata/app</directory>
+    <finalName>${project.artifactID}-${project.version}</finalName>
     <plugins>
 	<plugin>
   	<groupId>org.apache.maven.plugins</groupId>
