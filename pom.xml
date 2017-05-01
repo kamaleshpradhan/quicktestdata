@@ -9,7 +9,7 @@
      <!--testSourceDirectory>/home/git/proj/apptestsrc</testSourceDirectory-->
      <outputDirectory>/var/lib/jenkins/workspace/quicktestdata/java/bin/testbox</outputDirectory>
      <!--testOutputDirectory>/home/git/proj/apptestclass</testOutputDirectory-->
-    <directory>/quicktestdata/app</directory>
+    <directory>/var/lib/jenkins/workspace/quicktestdata/app</directory>
     <finalName>${project.artifactID}-${project.version}</finalName>
     <plugins>
 	<plugin>
