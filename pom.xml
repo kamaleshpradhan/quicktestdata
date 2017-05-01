@@ -10,7 +10,7 @@
      <outputDirectory>/var/lib/jenkins/workspace/quicktestdata/java/bin</outputDirectory>
      <!--testOutputDirectory>/home/git/proj/apptestclass</testOutputDirectory-->
     <directory>/var/lib/jenkins/workspace/quicktestdata/app</directory>
-    <finalName>${project.artifactID}-${project.version}</finalName>
+    <finalName>${project.artifactId}-${project.version}</finalName>
     <plugins>
 	<plugin>
   	<groupId>org.apache.maven.plugins</groupId>
