@@ -61,6 +61,7 @@ public class CoreLogic {
 			} catch (SQLException e) {
 				
 				ProgressBar.alive=false;
+				System.out.println(" ");
 				System.out.println("Could not establish DB connection, please check your connection string...");
 				System.out.println("Possible cause: "+e.getMessage());
 				System.exit(1);
@@ -82,7 +83,7 @@ public class CoreLogic {
 		}catch(SQLException e){
 			
 			ProgressBar.alive=false;
-			System.out.println("");
+			System.out.println(" ");
 			System.out.println("Problem during DB query, please try again...");
 			System.out.println("Possible cause: "+e.getMessage());
 			System.exit(1);
@@ -138,6 +139,7 @@ public class CoreLogic {
 		} catch (SQLException e) {
 			
 			ProgressBar.alive=false;
+			System.out.println(" ");
 			System.out.println("Problem during retrieving data from DB...");
 			System.out.println("Possible cause: "+e.getMessage());
 			System.exit(1);
@@ -185,16 +187,19 @@ public class CoreLogic {
 			br.close();
 		}catch(FileNotFoundException e){
 			ProgressBar.alive=false;
+			System.out.println(" ");
 			System.out.println("Config file not found...");
 			System.out.println("Possible cause: "+e.getMessage());
 			System.exit(1);
 		}catch(IOException e){
 			ProgressBar.alive=false;
+			System.out.println(" ");
 			System.out.println("Error ocurred...");
 			System.out.println("Possible cause: "+e.getMessage());
 			System.exit(1);
 		}catch(ArrayIndexOutOfBoundsException e){
 			ProgressBar.alive=false;
+			System.out.println(" ");
 			System.out.println("Error ocurred...");
 			System.out.println("Possible cause: "+e.getMessage()+":Malformed config parameters");
 			System.exit(1);
