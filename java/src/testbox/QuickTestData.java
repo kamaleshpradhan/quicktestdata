@@ -83,6 +83,7 @@ public class QuickTestData {
 		ResultSet rs;
 		rs=cl.retrieveData(ast.getSQLQuery(opt, f_sz));
 		ProgressBar.alive=false;
+		System.out.println(" ");
 		return(cl.showData(rs));
 	}
 
