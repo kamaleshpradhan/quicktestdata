@@ -12,7 +12,7 @@ public class ProgressBar extends Thread{
 				System.out.print(".");
 	            Thread.sleep(500);
 	       }
-	       System.out.println("\n");
+	      // System.out.println("\n");
 	    }catch (InterruptedException e) {
 	         System.out.println("Thread " +  threadname + " interrupted.");
 	    }
